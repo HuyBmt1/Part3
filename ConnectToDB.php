@@ -29,7 +29,7 @@ if (empty(getenv("DATABASE_URL"))){
    ));
 }  
 
-$sql = "SELECT * FROM student ORDER BY stuid";
+$sql = "SELECT * FROM customer ORDER BY CustomerID";
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -56,11 +56,12 @@ echo '<p>Students information:</p>';
       ?>
    
       <tr>
-        <td scope="row"><?php echo $row['stuid'] ?></td>
-        <td><?php echo $row['fname'] ?></td>
-        <td><?php echo $row['email'] ?></td>
-        <td><?php echo $row['classname'] ?></td>
-        
+        <td scope="row"><?php echo $row['CustomerID'] ?></td>
+        <td><?php echo $row['CustomerName'] ?></td>
+        <td><?php echo $row['CustomerBirthday'] ?></td>
+        <td><?php echo $row['CustomerAddress'] ?></td>
+        <td><?php echo $row['CustomerPhone'] ?></td>
+        <td><?php echo $row['CustomerEmail'] ?></td>
       </tr>
      
       <?php
