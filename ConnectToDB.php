@@ -29,13 +29,13 @@ if (empty(getenv("DATABASE_URL"))){
    ));
 }  
 
-$sql = "SELECT * FROM customer ORDER BY CustomerID";
+$sql = "select * from customer";
 $stmt = $pdo->prepare($sql);
 //Thiết lập kiểu dữ liệu trả về
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-echo '<p>Students information:</p>';
+echo '<p>Customer information:</p>';
 
 ?>
 <div id="container">
