@@ -34,6 +34,10 @@ and open the template in the editor.
     </head>
     <body>
     <header id="header">
+        <a href="ConnectToDB.php">Connect to database</a>
+        <a href="InsertData.php">Insert data base</a>
+        <a href="DeleteData.php">Delete data</a>
+        <a href="UpdateData.php">Update data</a>
       <div class="header-top">
         <div class="container">
           <div class="row">
