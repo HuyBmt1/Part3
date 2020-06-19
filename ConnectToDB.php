@@ -42,10 +42,12 @@ echo '<p>Students information:</p>';
 <table class="table table-bordered table-condensed">
     <thead>
       <tr>
-        <th>Student ID</th>
-        <th>Name</th>
-        <th>email</th>
-        <th>Class</th>
+        <th>CustomerID</th>
+        <th>CustomerName</th>
+        <th>CustomerBirthday</th>
+        <th>CustomerAddress</th>
+        <th>CustomerPhone</th>
+        <th>CustomerEmail</th>
       </tr>
     </thead>
     <tbody>
